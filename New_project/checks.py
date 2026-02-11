@@ -8,3 +8,6 @@ def find_port(path):
     a = import_file(path)
     return [x for x in a if x[3] in ('22', '23', '3389')]
 
+def find_size(path):
+    a = import_file(path)
+    return [x for x in a if int(x[-1]) > 5000]
