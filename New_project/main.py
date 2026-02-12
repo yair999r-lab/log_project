@@ -8,7 +8,7 @@ a = 'C:/Intel/pycharm/pythonProject8/New_project/network_traffic.log'
 
 
 if __name__ == '__main__':
-    print(analyze_suspicious_behavior(a))
+    print(find_really_suspicious(a))
 
 
 

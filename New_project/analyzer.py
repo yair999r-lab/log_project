@@ -17,3 +17,8 @@ def analyze_suspicious_behavior(file_path):
             final_report[ip].append(warning)
 
     return final_report
+
+def find_really_suspicious(path):
+    a =analyze_suspicious_behavior(path)
+
+    return {ip: warnings for ip, warnings in a.items() if len(warnings) >= 2}
