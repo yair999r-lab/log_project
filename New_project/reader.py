@@ -9,7 +9,7 @@ def dict_of_ip(path):
     a = import_file(path)
 
     ab = [ips[1] for ips in a]
-    b = {ip: ab.count(ip) for ip in set (ab)}
+    b = {ip: ab.count(ip) for ip in set(ab)}
 
     return b
 
