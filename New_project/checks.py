@@ -1,7 +1,6 @@
 from reader import import_file
 
 
-
 def find_bad_ip(path):
     a = import_file(path)
     return [x for x in a if not x[1].startswith(("192.168.", "10."))]
