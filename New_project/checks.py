@@ -22,4 +22,4 @@ def dict_of_num_port(path):
 
 def find_night_activity(path):
     a = import_file(path)
-    return [x[0] for x in a if x[0].split()[1].startswith(('00','01','02','03','04','05'))]
+    return [x for x in a if x[0].split()[1].startswith(('00','01','02','03','04','05'))]
