@@ -1,14 +1,14 @@
 from analyzer import *
 from reader import import_file,dict_of_ip
 from checks import *
-import subprocess
+from reporter import *
 
 a = 'C:/Intel/pycharm/pythonProject8/New_project/network_traffic.log'
 
 
 
 if __name__ == '__main__':
-    print(find_really_suspicious(a))
+    print(list_of_size_in_kilo(a))
 
 
 
