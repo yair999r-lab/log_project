@@ -8,7 +8,7 @@ a = 'C:/Intel/pycharm/pythonProject8/New_project/network_traffic.log'
 
 
 if __name__ == '__main__':
-    print(list_of_size_in_kilo(a))
+    print(list_of_bad_port(a))
 
 
 
