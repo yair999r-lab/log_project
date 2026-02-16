@@ -11,5 +11,8 @@ def list_of_size_in_kilo(path):
 
 def list_of_bad_port(path):
     a = import_file(path)
-    return list(filter(lambda x: x[3] in ('22', '23' , '3389',),a))
+    return list(filter(lambda x: x[3] in ('22', '23' , '3389'),a))
 
+def list_of_night_activity(path):
+    a = import_file(path)
+    return list(filter(lambda x: x[0].split()[1].startswith(('00','01','02','03','04','05')),a))
